@@ -2,6 +2,9 @@
 
 A comprehensive cryptocurrency trading bot built with Python that combines:
 - **CCXT** for Binance exchange connectivity
+- **Futures Trading** with up to 125x leverage 🆕
+- **Multi-Symbol Portfolio** management (up to 5 concurrent positions) 🆕
+- **Dynamic Signal Scanner** across 50+ symbols 🆕
 - **200+ Technical Indicators** from TA-Lib
 - **Machine Learning** for pattern recognition (XGBoost, LightGBM, Random Forest)
 - **Sentiment Analysis** from news sources
@@ -11,7 +14,33 @@ A comprehensive cryptocurrency trading bot built with Python that combines:
 
 ## Features
 
-### 🛡️ Advanced Safety Systems (NEW!)
+### 🚀 Futures Trading (NEW!)
+- **Binance Futures** with customizable leverage (1-125x)
+- **Multi-Symbol Portfolio Management:**
+  - Trade up to 5 symbols simultaneously
+  - 4% risk per trade (configurable)
+  - Automatic position sizing based on risk
+- **Dynamic Market Scanner:**
+  - Scans 50+ top symbols by volume
+  - Ranks by signal strength (0-100)
+  - Automatically finds best opportunities
+- **User-Configurable Settings:**
+  - Set your own leverage
+  - Adjust stop loss (ATR-based)
+  - Customize take profit targets
+- **Isolated Margin Mode:** Each position independent
+- **Automatic TP/SL Orders:** Set on every trade
+- **Liquidation Protection:** Closes positions at 90% margin
+
+**Quick Start:**
+```bash
+# Futures paper trading
+python futures_bot.py --mode paper --capital 10000 --leverage 10
+
+# See FUTURES_TRADING.md for complete guide
+```
+
+### 🛡️ Advanced Safety Systems
 - **Emergency Stop System**:
   - Automatic detection of market crashes (-5% in 1min, -10% in 5min, -15% in 15min)
   - Extreme volume spike detection (5x+ normal volume)
