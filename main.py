@@ -17,6 +17,7 @@ from src.ml.ml_engine import MLEngine
 from src.sentiment.sentiment_analyzer import SentimentAnalyzer
 from src.risk.risk_manager import RiskManager
 from src.utils.logger import setup_logger
+from src.utils.safety import SafetyManager
 
 logger = setup_logger('trading_bot')
 
@@ -52,12 +53,13 @@ class TradingBot:
         self.ml_engine = MLEngine()
         self.sentiment_analyzer = SentimentAnalyzer()
         self.risk_manager = RiskManager(initial_capital)
+        self.safety_manager = SafetyManager()
 
         # Bot state
         self.is_running = False
         self.last_retrain_time = None
 
-        logger.info("Trading Bot initialized successfully")
+        logger.info("Trading Bot initialized successfully with safety systems")
 
     def initialize(self):
         """Initialize bot with historical data and train ML models."""
@@ -171,6 +173,36 @@ class TradingBot:
             current_price = df.iloc[-1]['close']
 
             logger.info(f"Trading cycle at {current_timestamp}, Price: {current_price:.2f}")
+
+            # 🚨 CRITICAL: Check all safety conditions first
+            is_safe, safety_reason = self.safety_manager.check_safety_conditions(
+                df,
+                self.risk_manager.peak_capital,
+                self.risk_manager.current_capital,
+                self.strategy.trade_history
+            )
+
+            # If emergency stop or circuit breaker triggered, close positions immediately
+            if self.safety_manager.should_close_positions():
+                logger.critical("🚨 EMERGENCY: Closing all positions immediately!")
+                if self.strategy.position:
+                    trade_info = self.strategy.close_position(
+                        df, current_timestamp, "EMERGENCY_STOP"
+                    )
+                    if trade_info:
+                        self.execute_trade('sell', trade_info['amount'])
+                        was_win = trade_info['pnl'] > 0
+                        self.risk_manager.record_trade(trade_info['pnl'], was_win)
+
+                # Print safety status
+                safety_status = self.safety_manager.get_status()
+                logger.critical(f"Safety Status: {safety_status}")
+                return
+
+            # If not safe to trade (but not emergency), just skip this cycle
+            if not is_safe:
+                logger.warning(f"Trading paused: {safety_reason}")
+                return
 
             # Check risk limits
             can_trade, reason = self.risk_manager.check_risk_limits()
