@@ -464,9 +464,24 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Disclaimer
 
-This software is for educational purposes only. Do not risk money which you are afraid to lose. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS.
+⚠️ **THIS IS NOT INVESTMENT ADVICE** ⚠️
 
-Trading cryptocurrencies carries a high level of risk and may not be suitable for all investors. Before deciding to trade, you should carefully consider your investment objectives, level of experience, and risk appetite.
+This software is for educational and informational purposes only. It is not intended as and does not constitute financial advice, investment advice, trading advice, or any other type of advice.
+
+**Important:**
+- Do not risk money which you are afraid to lose
+- USE THE SOFTWARE AT YOUR OWN RISK
+- THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS
+- Past performance does not guarantee future results
+- Trading cryptocurrencies carries a high level of risk and may not be suitable for all investors
+- You should carefully consider your investment objectives, level of experience, and risk appetite
+- Consult with a qualified financial advisor before making any investment decisions
+
+**By using this software, you acknowledge that:**
+1. You are using it at your own risk
+2. You understand the risks involved in cryptocurrency trading
+3. You will not hold the developers responsible for any losses
+4. This is NOT investment advice
 
 ## Support
 
@@ -500,3 +515,19 @@ Future enhancements:
 **Happy Trading! 🚀📈**
 
 *Remember: Only invest what you can afford to lose. Always do your own research.*
+
+---
+
+## ⚠️ FINAL REMINDER ⚠️
+
+**THIS IS NOT INVESTMENT ADVICE**
+
+This trading bot is a tool for educational purposes. Any trading decisions you make are your own responsibility. The developers of this software are not financial advisors and do not provide investment advice. Always:
+
+- Do your own research (DYOR)
+- Understand the technology and markets
+- Never invest more than you can afford to lose
+- Consider seeking advice from qualified financial professionals
+- Test thoroughly in paper trading mode before using real money
+
+**USE AT YOUR OWN RISK. NOT INVESTMENT ADVICE.**

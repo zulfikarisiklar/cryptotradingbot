@@ -1,6 +1,10 @@
 """
 Main trading bot orchestrator.
 Combines all components for live trading.
+
+⚠️ DISCLAIMER: THIS IS NOT INVESTMENT ADVICE ⚠️
+This software is for educational purposes only.
+USE AT YOUR OWN RISK. Not financial advice.
 """
 
 import time

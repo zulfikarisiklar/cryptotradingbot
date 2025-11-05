@@ -1,6 +1,11 @@
 """
 Futures trading bot with multi-symbol portfolio management.
 Dynamically finds and trades the best opportunities with leverage.
+
+⚠️ DISCLAIMER: THIS IS NOT INVESTMENT ADVICE ⚠️
+This software is for educational purposes only.
+Futures trading is EXTREMELY HIGH RISK.
+USE AT YOUR OWN RISK. Not financial advice.
 """
 
 import time

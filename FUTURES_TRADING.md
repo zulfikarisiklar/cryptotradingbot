@@ -447,3 +447,29 @@ For issues or questions:
 **Remember:** Futures trading is high-risk. Only trade with money you can afford to lose. The higher the leverage, the higher the risk. Always use stop losses and never trade emotionally.
 
 **Good luck and trade safely! 🚀**
+
+---
+
+## ⚠️ IMPORTANT DISCLAIMER ⚠️
+
+**THIS IS NOT INVESTMENT ADVICE**
+
+This futures trading bot is provided for educational and informational purposes only. It is NOT intended as investment advice, financial advice, or trading advice.
+
+**Key Points:**
+- Futures trading is EXTREMELY HIGH RISK
+- You can lose MORE than your initial investment
+- Leverage amplifies both gains AND losses
+- High leverage can lead to rapid liquidation
+- The developers assume NO responsibility for your trading results
+- This software does not guarantee profits
+- Past performance does not indicate future results
+
+**By using this futures trading bot, you acknowledge:**
+1. You understand the extreme risks of leveraged trading
+2. You are solely responsible for your trading decisions
+3. You will not hold the developers liable for any losses
+4. You should consult a qualified financial advisor before trading
+5. **THIS IS NOT INVESTMENT ADVICE**
+
+**TRADE AT YOUR OWN RISK. NOT FINANCIAL ADVICE.**

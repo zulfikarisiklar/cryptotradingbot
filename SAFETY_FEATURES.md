@@ -391,3 +391,19 @@ These safety features are designed to protect you during extreme market conditio
 ---
 
 **Questions or issues?** Check the logs, review this document, and test in paper mode before live trading.
+
+---
+
+## ⚠️ DISCLAIMER ⚠️
+
+**THIS IS NOT INVESTMENT ADVICE**
+
+All safety features in this trading bot are designed to reduce risk but CANNOT eliminate it completely. Markets can move faster than safety systems can react. Exchange issues, network problems, and extreme volatility can cause losses despite all protections.
+
+**By using this software:**
+- You acknowledge you are trading at your own risk
+- You understand that safety features do not guarantee profits or prevent losses
+- You will not hold the developers responsible for any trading losses
+- You recognize this is educational software, not professional investment advice
+
+**NOT FINANCIAL ADVICE. USE AT YOUR OWN RISK.**
