@@ -29,7 +29,8 @@ wheels/
 *.sqlite
 *.log
 logs/
-data/
+/data/
+!src/data/
 *.csv
 *.json
 models/

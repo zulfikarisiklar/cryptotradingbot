@@ -129,7 +129,7 @@ class MLEngine:
 
         # Remove infinite and NaN values
         features_df = features_df.replace([np.inf, -np.inf], np.nan)
-        features_df = features_df.fillna(method='ffill').fillna(0)
+        features_df = features_df.ffill().fillna(0)
 
         logger.info(f"Prepared {len(features_df.columns)} features")
 
